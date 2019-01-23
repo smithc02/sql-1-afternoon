@@ -1,0 +1,103 @@
+-- CREATE TABLE Person ( 
+-- ID SERIAL, 
+-- Name varchar(255), 
+-- Age integer, 
+-- Height integer, 
+-- City text, 
+-- FavoriteColor text );
+
+-- CREATE TABLE Student(
+--   id Serial,
+--   first_name varchar(255),
+--   hometown varchar(255),
+--   fun_fact text
+
+-- );
+-- INSERT INTO Student(first_name, hometown, fun_fact)
+-- VALUES ('James', 'Dallas', 'Postgres is progress');
+-- SELECT * FROM Student
+-- INSERT INTO person (name, favoritecolor,city,height,age)
+-- VALUES ('Rick','Blue','NYC',120,12),
+-- 			('Charles','Red','LA',150,15),
+--       ('Bing','purple','Madison',142,16),
+--       ('Roger','grey','Austin',190,43),
+--       ('Jerry','black','hometown',134,61);
+-- CREATE TABLE Person ( 
+-- ID SERIAL, 
+-- Name varchar(255), 
+-- Age integer, 
+-- Height integer, 
+-- City text, 
+-- FavoriteColor text );
+
+-- CREATE TABLE Student(
+--   id Serial,
+--   first_name varchar(255),
+--   hometown varchar(255),
+--   fun_fact text
+
+-- );
+-- INSERT INTO Student(first_name, hometown, fun_fact)
+-- VALUES ('James', 'Dallas', 'Postgres is progress');
+-- SELECT * FROM Student
+-- INSERT INTO person (name, favoritecolor,city,height,age)
+-- VALUES ('Rick','Blue','NYC',120,12),
+-- 			('Charles','Red','LA',150,15),
+--       ('Bing','purple','Madison',142,16),
+--       ('Roger','grey','Austin',190,43),
+--       ('Jerry','black','hometown',134,61);
+-- SELECT * FROM person ORDER BY height ASC;
+-- SELECT * FROM person ORDER BY height DESC;
+-- SELECT * FROM person ORDER BY age DESC;
+-- SELECT * FROM person WHERE age >=20;
+-- SELECT * FROM person WHERE age =18;
+-- SELECT * FROM person WHERE age <20 AND age >30;
+-- SELECT * FROM person WHERE age != 27;
+-- SELECT * FROM person WHERE favoritecolor != 'Red';
+-- SELECT * FROM person WHERE favoritecolor != 'Red' and favoritecolor != 'Blue';
+-- SELECT * FROM person WHERE favoritecolor = 'orange' and favoritecolor ='green';
+-- SELECT * FROM person WHERE favoritecolor IN ('orange','green','Blue');
+-- SELECT * FROM person WHERE favoritecolor IN ('yellow','purple');
+-- CREATE TABLE Orders(
+-- 	PersonID SERIAL,
+--   ProductName TEXT,
+--   ProductPrice INTEGER,
+--   Quantity INTEGER
+-- )
+-- INSERT INTO orders (productname, productprice,quantity)
+-- 	VALUES ('turkey',2,3), ('chicken',5,7), ('coffee',75,6),('steak',543,25),('chocolate',7,68)
+-- SELECT * FROM orders
+
+-- SELECT sum(quantity) FROM orders
+-- SELECT SUM(productprice * quantity) FROM orders; 
+-- SELECT SUM(productprice * quantity) FROM orders WHERE personid = 1;
+-- INSERT INTO artist (name)
+-- 	VALUES ('Caleb'),('Kevin'), ('John');
+-- SELECT * 
+-- FROM artist 
+-- ORDER BY name DESC
+-- LIMIT 10;
+-- SELECT * 
+-- FROM artist 
+-- ORDER BY name ASC
+-- LIMIT 5;
+-- SELECT * FROM artist WHERE name LIKE 'Black%';
+-- SELECT * FROM artist WHERE name LIKE '%Black%';
+
+-- SELECT DISTINCT(first_name,last_name) FROM employee WHERE city ='Calgary';
+-- SELECT DISTINCT(birth_date) FROM employee ORDER BY birth_date DESC LIMIT 1;
+-- SELECT * FROM employee WHERE employee_id=2;
+-- SELECT * FROM employee WHERE reports_to =2;
+-- SELECT COUNT(city) FROM employee WHERE city ='Lethbridge'
+-- SELECT COUNT(*) FROM invoice WHERE billing_country = 'USA';
+-- SELECT MAX(total) FROM invoice;
+-- SELECT MIN(total) FROM invoice;
+-- SELECT * FROM invoice WHERE total >5;
+-- SELECT COUNT(*) FROM invoice WHERE total <5;
+-- SELECT COUNT(*) FROM invoice WHERE billing_state IN ('CA','TX','AZ');
+-- SELECT AVG(total) FROM invoice;
+-- SELECT SUM(total) FROM invoice;
+
+
+
+
